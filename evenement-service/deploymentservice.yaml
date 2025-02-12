@@ -1,0 +1,35 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: evenement-service
+  labels:
+    app: evenement-service
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: evenement-service
+  template:
+    metadata:
+      labels:
+        app: evenement-service
+    spec:
+      containers:
+        - name: evenement-service
+          image: youssef07/evenement-service:latest
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8083
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: evenement-service-svc
+spec:
+  ports:
+    - port: 80
+      targetPort: 8083
+  selector:
+    app: evenement-service
+
