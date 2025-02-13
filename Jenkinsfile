@@ -9,7 +9,7 @@ pipeline {
 
     tools {
         maven 'M398'     // Assure-toi que "M398" correspond bien au Maven installé dans Jenkins
-        jdk 'JDK 11'     // Assure-toi que "JDK 11" est bien configuré dans Jenkins
+        jdk 'JDK 11'    
     }
 
     stages {
