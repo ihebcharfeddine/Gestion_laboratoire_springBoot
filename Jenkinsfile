@@ -16,7 +16,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Récupère le code depuis GitHub
-                git branch: 'main', url: 'https://github.com/ton-organisation/ton-repository.git'
+                git branch: 'main', url: 'https://github.com/ihebcharfeddine/Gestion_laboratoire_springBoot.git'
             }
         }
 
