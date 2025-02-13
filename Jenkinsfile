@@ -8,7 +8,7 @@ pipeline {
     }
 
     tools {
-        maven 'M398'  // Choisis la version de Maven installée dans Jenkins
+        maven 'M398' 
         jdk 'JDK 11'    
     }
 
