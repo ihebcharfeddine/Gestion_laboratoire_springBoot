@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        SONARQUBE_URL = 'http://192.168.8.128:9000'  // URL de SonarQube
+        SONARQUBE_URL = 'http://192.168.8.132:9000'  // URL de SonarQube
         SONARQUBE_TOKEN = credentials('sonar_access_token') // Récupération du token SonarQube via les Credentials
         MAVEN_HOME = '/opt/maven'                     // Chemin Maven si nécessaire
     }
